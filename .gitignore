@@ -1,0 +1,30 @@
+# Ignore Terraform state files (contains sensitive info)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore Terraform cache and lock files
+.terraform/
+.terraform.lock.hcl
+
+# Ignore sensitive files (but keep kubeconfig)
+*.pem
+*.key
+*.crt
+*.env
+*.tfvars
+*.tfvars.json
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore logs and temp files
+*.log
+*.bak
+*.tmp
+
+# Ignore compiled Terraform plan files
+*.tfplan
+
+# Ignore any generated artifacts
+*.zip
+*.tar.gz
